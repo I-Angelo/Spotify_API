@@ -1,0 +1,121 @@
+/* RESET DEFAULT BROWSER STYLES */
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;/*'Nunito', sans-serif; */
+    color: #333;
+    font-weight: 300;
+    line-height: 1.6;
+    margin-top: -20px;
+    margin-bottom: -20px;
+    background-image: url(/spotify-API/images/photo-1597423244036-ef5020e83f3c.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+button {
+    background-color: gray !important;
+    border: 4px solid white;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+button:hover {
+    background-color: darkslategray !important;
+    border: 4px solid gray;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+/* Styles for movie posters */
+.container{
+    width: 40%;
+    margin: 2rem auto;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(7, 5vw);
+    grid-gap: 1.5rem;
+    padding-top: 20px;
+}
+
+.gallery__img{
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    display: block;
+    padding: 10px;
+    background-color: black;
+    /* object-fit: cover;
+    display: block; */
+}
+
+.gallery__img:hover {
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    display: block;
+    padding: 10px;
+    background-color: darkslategray;
+}
+
+.gallery__item--1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.gallery__item--2{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.gallery__item--3{
+    grid-column-start: 5;
+    grid-column-end: 10;
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+
+.gallery__item--4{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 6;
+}
+
+.gallery__item--5{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 6;
+    grid-row-end: 8;
+}
+
+.gallery__item--6{
+    grid-column-start: 5;
+    grid-column-end: 10;
+    grid-row-start: 5;
+    grid-row-end: 8;
+}
+
+.buttoncontain {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 3%;
+    padding: 10px;
+}
